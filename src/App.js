@@ -2,14 +2,25 @@ import React from 'react';
 
 const App = () => {
   return (
-    <div>
+    <div style={comp}>
       <article>
 
-        <h2 style={{ color: 'red', textAlign: 'center', marginTop: '20px', background: 'blue' }} >This is article</h2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab consequatur quia in qui nobis libero, adipisci dolore quos voluptas animi beatae impedit. Ipsa vero in corrupti, harum, cupiditate aliquid officiis voluptates, rerum recusandae cumque dolorum? Asperiores temporibus, corrupti explicabo, blanditiis molestias laborum labore distinctio possimus facilis fugit nemo dolorum repellendus.</article>
+        <h2 style={{ color: '#fff', textAlign: 'center', marginTop: '20px', background: 'blue' }} >This is article</h2>
+        <p style={mystyle}> This is a pragraph create with jsx</p>
+        Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, dolores!</article>
     </div>
   );
 };
+const mystyle = {
+  color: '#fff',
+  padding: '10px',
+  margin: '10px',
+  backgroundColor: 'dogErblUe'
+}
+const comp = {
+  padding: '10%',
+
+}
 
 export default App;
 
