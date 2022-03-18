@@ -1,4 +1,5 @@
 import React from 'react';
+import Blog from './compononet/blog/Blog';
 
 const App = () => {
   return (
@@ -8,6 +9,11 @@ const App = () => {
         <h2 style={{ color: '#fff', textAlign: 'center', marginTop: '20px', background: 'blue' }} >This is article</h2>
         <p style={mystyle}> This is a pragraph create with jsx</p>
         Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, dolores!</article>
+      <div style={container}>
+        <Blog heading='This is heading' author='This author'></Blog>
+        <Blog heading='This is heading' author='This author'></Blog>
+        <Blog heading='This is heading' author='This author'></Blog>
+      </div>
     </div>
   );
 };
@@ -21,9 +27,8 @@ const comp = {
   padding: '10%',
 
 }
-
+const container = {
+  display: 'grid',
+  gridTemplateColumns: 'repeat(3, 1fr)'
+}
 export default App;
-
-
-
-
